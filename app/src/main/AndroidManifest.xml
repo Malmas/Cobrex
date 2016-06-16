@@ -18,6 +18,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activty android:name=".RoomOverview" />
+
+        <activity
+            android:name=".SingleRoom"
+            android:label="@string/title_activity_single_room"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".RoomOverview"
+            android:label="@string/title_activity_room_overview"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".addTask"
+            android:label="@string/title_activity_add_task"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>

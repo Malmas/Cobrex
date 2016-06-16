@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Cobrex</string>
     <string name="action_settings">Settings</string>
+    <string name="Blogin" />
+    <string name="title_activity_room_overview">Kamer overzicht</string>
+    <string name="title_activity_single_room">SingleRoom</string>
+    <string name="emptyString" />
+    <string name="password_field">Wachtwoord</string>
+    <string name="fastershifting">Faster Shifting</string>
+    <string name="Cobrextitle">Cobrex</string>
+    <string name="room3">Room 3</string>
+    <string name="room4">Room 3</string>
+    <string name="title_activity_add_task">Taak Toevoegen</string>
+
 </resources>
