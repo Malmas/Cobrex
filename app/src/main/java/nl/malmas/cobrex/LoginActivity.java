@@ -1,8 +1,6 @@
 package nl.malmas.cobrex;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -13,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class MyActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     private EditText username;
     private EditText password;
 
@@ -23,7 +21,6 @@ public class MyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setContentView(R.layout.login_screen);
-        setTitle("loginscherm");
         setSupportActionBar(toolbar);
 
        /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -66,11 +63,19 @@ public class MyActivity extends AppCompatActivity {
         {
             EditText username = (EditText)findViewById(R.id.TFusername);
             String str= username.getText().toString();
-            
+            if (str=="Carla")
+            {
+                Toast.makeText(this, "Verkeerde gegevens", Toast.LENGTH_SHORT).show();
 
-            Intent roomoverview = new Intent(this, RoomOverview.class);
-            roomoverview.putExtra("Username",str);
-            startActivity(roomoverview);
+            }
+
+            else {
+
+                Intent roomoverview = new Intent(this, RoomOverviewActivity.class);
+                roomoverview.putExtra("Username", str);
+                Toast.makeText(this, "Login succesvol", Toast.LENGTH_SHORT).show();
+                startActivity(roomoverview);
+            }
         }
 
 
